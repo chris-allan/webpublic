@@ -1,3 +1,5 @@
+{% extends "webpublic/base/base.html" %}
+
 {% comment %}
 <!--
   Copyright (C) 2011 University of Dundee & Open Microscopy Environment.
@@ -18,15 +20,12 @@
 -->
 {% endcomment %}
 
-
-{% extends "webpublic/base/base.html" %}
-
 {% block title %}OMERO.webpublic{% endblock %}
 
 {% block body %}
 <form id="publicise" method="post" name="publicise">
     <div style="text-align: center; margin-bottom: 7px;">
-        <img src="{% url webstatic "images/logo.jpg" %}" />
+        <img src="{% static "common/image/ome_text_109.png" %}" />
             <table style="width: 100%;">
                 <tr>
                     <td style="width: 100%;">
